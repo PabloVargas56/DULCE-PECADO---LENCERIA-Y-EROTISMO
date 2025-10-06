@@ -1,0 +1,132 @@
+    /* 🎨 Paleta principal */
+    :root {
+      --rosa: #e83e8c;
+      --verde: #00ff99;
+      --negro: #0b0b0b;
+      --gris-oscuro: #1a1a1a;
+      --blanco: #fff;
+    }
+
+    /* 🖤 Fondo */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--negro);
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('img/fondo-lenceria.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--blanco);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* 🧁 Contenedor principal */
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(20, 20, 20, 0.85);
+      border-radius: 24px;
+      padding: 40px 35px;
+      box-shadow: 0 0 40px rgba(232, 62, 140, 0.3);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ✨ Título */
+    h2 {
+      text-align: center;
+      color: var(--rosa);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    /* 🏷️ Etiquetas e inputs */
+    label {
+      font-size: 0.9rem;
+      color: #ddd;
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      background: var(--gris-oscuro);
+      color: var(--blanco);
+      transition: 0.3s;
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+
+    input:focus {
+      border-color: var(--rosa);
+      background: #222;
+      box-shadow: 0 0 6px rgba(232, 62, 140, 0.4);
+      outline: none;
+    }
+
+    /* 💅 Botón */
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: var(--rosa);
+      color: var(--blanco);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--verde);
+      color: var(--negro);
+      box-shadow: 0 0 20px rgba(0, 255, 153, 0.4);
+      transform: translateY(-1px);
+    }
+
+    /* 🔗 Enlace de login */
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .login-link a {
+      color: var(--verde);
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+      color: #00ffaa;
+    }
+
+    /* 📱 Responsivo */
+    @media (max-width: 480px) {
+      .container {
+        margin: 20px;
+        padding: 30px 25px;
+      }
+    }

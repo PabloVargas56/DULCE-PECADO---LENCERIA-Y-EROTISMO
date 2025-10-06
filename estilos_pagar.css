@@ -1,0 +1,140 @@
+    /* 🎨 Paleta de colores */
+    /* 🎨 Paleta de colores */
+    :root {
+      --rosa: #e83e8c;
+      --verde: #00ff99;
+      --negro: #0b0b0b;
+      --gris-oscuro: #1a1a1a;
+      --gris-claro: #f8f9fa;
+      --blanco: #fff;
+    }
+
+    /* 🖤 Fondo general */
+    body {
+      background: linear-gradient(to bottom right, rgba(0,0,0,0.95), rgba(20,0,20,0.95)), url('img/fondo-lenceria.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--blanco);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    /* 🔝 Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .navbar-brand {
+      color: var(--rosa);
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .navbar-brand:hover {
+      color: var(--verde);
+    }
+
+    .nav-link {
+      color: #fff !important;
+      margin-left: 18px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: var(--rosa) !important;
+    }
+
+    /* 💳 Contenedor de pago */
+    .pago-container {
+      max-width: 600px;
+      background: rgba(20, 20, 20, 0.9);
+      margin: 100px auto 60px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(232, 62, 140, 0.25);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 0.7s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--rosa);
+      font-weight: 700;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    label {
+      color: #ccc;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    /* 🧾 Inputs */
+    .form-control,
+    .form-select {
+      background-color: var(--gris-oscuro);
+      border: 1px solid transparent;
+      color: var(--blanco);
+      border-radius: 12px;
+      padding: 12px;
+      transition: 0.3s;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: var(--rosa);
+      background-color: #222;
+      box-shadow: 0 0 8px rgba(232, 62, 140, 0.4);
+      outline: none;
+    }
+
+    /* 💰 Botón de pago */
+    .btn-pagar {
+      background: var(--rosa);
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .btn-pagar:hover {
+      background: var(--verde);
+      color: var(--negro);
+      box-shadow: 0 0 20px rgba(0, 255, 153, 0.4);
+      transform: translateY(-1px);
+    }
+
+    /* 📦 Footer */
+    footer {
+      text-align: center;
+      color: #aaa;
+      margin-top: 60px;
+      padding: 25px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+    }
+
+    /* 📱 Responsivo */
+    @media (max-width: 576px) {
+      .pago-container {
+        padding: 30px 25px;
+        margin: 80px 20px;
+      }
+    }
+  
